@@ -15,19 +15,23 @@ export default function Viz() {
     height: "540px",
     onFirstInteractive: function () {
       console.log("This viz is interactive.")
-      console.log(getUnderlyingData())
     },
   }
 
   function getUnderlyingData() {
-    let selectedSheet = viz.getWorkbook()
-
-    return selectedSheet
+    if (viz !== null) {
+      console.log("Viz is not null")
+      const workbook = viz.getWorkbook()
+      console.log(workbook)
+    } else {
+      console.log("We don't have a viz yet")
+    }
   }
 
   // This function will be run on page load to initialize our viz.
   const initViz = () => {
     setViz(new tableau.Viz(ref.current, url, options))
+    getUnderlyingData()
   }
 
   // Initialize viz when the page loads

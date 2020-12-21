@@ -2,6 +2,7 @@
   "name": "embedded-side-nav",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://us-east-1.online.tableau.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
