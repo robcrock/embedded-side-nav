@@ -14,7 +14,8 @@ function dashboardList() {
     {
       name: "Average Watch Time",
       author: "Robert Crocker",
-      image: "./images/img-02",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-02.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi2",
       id: uuidv4(),
@@ -23,7 +24,8 @@ function dashboardList() {
     {
       name: "Total Video Views",
       author: "Robert Crocker",
-      image: "./images/img-03",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-03.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi3",
       id: uuidv4(),
@@ -32,7 +34,8 @@ function dashboardList() {
     {
       name: "Total Unique Views",
       author: "Robert Crocker",
-      image: "./images/img-04",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-04.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi4",
       id: uuidv4(),
@@ -41,7 +44,8 @@ function dashboardList() {
     {
       name: "Average Views per Viewer",
       author: "Robert Crocker",
-      image: "./images/img-05",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-05.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi5",
       id: uuidv4(),
@@ -50,7 +54,8 @@ function dashboardList() {
     {
       name: "Impressions CTR",
       author: "Robert Crocker",
-      image: "./images/img-06",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-06.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi6",
       id: uuidv4(),
@@ -59,7 +64,8 @@ function dashboardList() {
     {
       name: "Audience Retention",
       author: "Robert Crocker",
-      image: "./images/img-07",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-07.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi7",
       id: uuidv4(),
@@ -68,7 +74,8 @@ function dashboardList() {
     {
       name: "Engagement",
       author: "Robert Crocker",
-      image: "./images/img-08",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-08.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi8",
       id: uuidv4(),
@@ -77,7 +84,8 @@ function dashboardList() {
     {
       name: "Subscribers Gained",
       author: "Robert Crocker",
-      image: "./images/img-09",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-09.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi9",
       id: uuidv4(),
@@ -86,7 +94,8 @@ function dashboardList() {
     {
       name: "Subscribers Lost",
       author: "Robert Crocker",
-      image: "./images/img-10",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-10.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi10",
       id: uuidv4(),
@@ -95,7 +104,8 @@ function dashboardList() {
     {
       name: "Estimated Revenue",
       author: "Robert Crocker",
-      image: "./images/img-11",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-11.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi11",
       id: uuidv4(),
@@ -104,7 +114,8 @@ function dashboardList() {
     {
       name: "Monitized Playbacks",
       author: "Robert Crocker",
-      image: "./images/img-12",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-12.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi12",
       id: uuidv4(),
