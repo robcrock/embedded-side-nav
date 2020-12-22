@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from "react"
 const { tableau } = window
 
-export default function Viz() {
+export default function Viz({ currentDashboard }) {
   const [viz, setViz] = useState(null)
 
+  console.log(currentDashboard.url)
   // Set up the arguments to pass into the Tableau Viz function
   const ref = useRef(null)
-  const url =
-    "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi1"
   const options = {
     hideTabs: true,
     hideToolbar: true,
@@ -18,24 +17,23 @@ export default function Viz() {
     },
   }
 
-  function getUnderlyingData() {
-    if (viz !== null) {
-      console.log("Viz is not null")
-      const workbook = viz.getWorkbook()
-      console.log(workbook)
-    } else {
-      console.log("We don't have a viz yet")
-    }
-  }
-
   // This function will be run on page load to initialize our viz.
   const initViz = () => {
-    setViz(new tableau.Viz(ref.current, url, options))
-    getUnderlyingData()
+    setViz(new tableau.Viz(ref.current, currentDashboard.url, options))
   }
 
   // Initialize viz when the page loads
   useEffect(initViz, [])
 
-  return <div ref={ref} />
+  return (
+    <div className="dashboard-container">
+      <img
+        src={require("../images/img-01.png")}
+        alt={`${currentDashboard.name} dashboard`}
+      ></img>
+      <h2>{currentDashboard.name}</h2>
+      <h3>{currentDashboard.author}</h3>
+      <div ref={ref}></div>
+    </div>
+  )
 }
