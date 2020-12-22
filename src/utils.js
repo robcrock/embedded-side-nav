@@ -4,7 +4,8 @@ function dashboardList() {
     {
       name: "Total Watch Time",
       author: "Robert Crocker",
-      image: "./images/img-01",
+      image:
+        "https://raw.githubusercontent.com/robcrock/embedded-side-nav/main/src/images/img-01.png",
       url:
         "https://10ax.online.tableau.com/t/developmentonlydev595736/views/SocialMediaKPIs/kpi1",
       id: uuidv4(),

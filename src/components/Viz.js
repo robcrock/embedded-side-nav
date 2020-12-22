@@ -4,7 +4,7 @@ const { tableau } = window
 export default function Viz({ currentDashboard }) {
   const [viz, setViz] = useState(null)
 
-  console.log(currentDashboard.url)
+  console.log(currentDashboard.image)
   // Set up the arguments to pass into the Tableau Viz function
   const ref = useRef(null)
   const options = {
@@ -28,7 +28,7 @@ export default function Viz({ currentDashboard }) {
   return (
     <div className="dashboard-container">
       <img
-        src={require("../images/img-01.png")}
+        src={currentDashboard.image}
         alt={`${currentDashboard.name} dashboard`}
       ></img>
       <h2>{currentDashboard.name}</h2>
