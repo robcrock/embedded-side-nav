@@ -19,18 +19,19 @@ export default function Viz({ currentDashboard }) {
 
   // This function will be run on page load to initialize our viz.
   const initViz = () => {
+    if (viz) {
+      viz.dispose()
+      setViz(null)
+    }
+
     setViz(new tableau.Viz(ref.current, currentDashboard.url, options))
   }
 
   // Initialize viz when the page loads
-  useEffect(initViz, [])
+  useEffect(initViz, [currentDashboard])
 
   return (
     <div className="dashboard-container">
-      <img
-        src={currentDashboard.image}
-        alt={`${currentDashboard.name} dashboard`}
-      ></img>
       <h2>{currentDashboard.name}</h2>
       <h3>{currentDashboard.author}</h3>
       <div ref={ref}></div>
