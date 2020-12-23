@@ -31,7 +31,7 @@ export default function Viz({ currentDashboard }) {
   useEffect(initViz, [currentDashboard])
 
   return (
-    <div className="dashboard-container">
+    <div className="viz-container">
       <h2>{currentDashboard.name}</h2>
       <h3>{currentDashboard.author}</h3>
       <div ref={ref}></div>

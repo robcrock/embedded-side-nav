@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+import Nav from "./components/Nav"
 import Viz from "./components/Viz"
 import List from "./components/List"
 // Adding styles
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav listStatus={listStatus} setListStatus={setListStatus} />
       <Viz currentDashboard={currentDashboard} />
       <List
         listStatus={listStatus}

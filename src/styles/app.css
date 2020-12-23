@@ -1,7 +1,7 @@
 /* @import-normalize; */
-@import "./dashboard.css";
+@import "./viz.css";
 @import "./list.css";
-/* @import "./nav.css"; */
+@import "./nav.css";
 
 *,
 *::before,

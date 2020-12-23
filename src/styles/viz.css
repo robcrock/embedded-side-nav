@@ -1,4 +1,4 @@
-.song-container {
+.viz-container {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -6,15 +6,15 @@
   justify-content: center;
 }
 
-.song-container img {
+.viz-container img {
   width: 20%;
   border-radius: 50%;
 }
 
-.song-container h2 {
+.viz-container h2 {
   padding: 3rem 1rem 1rem 1rem;
 }
 
-.song-container h3 {
+.viz-container h3 {
   font-size: 1rem;
 }
