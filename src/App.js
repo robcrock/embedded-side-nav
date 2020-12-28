@@ -13,13 +13,23 @@ function App() {
   const [dashboards, setDashboards] = useState(data())
   const [currentDashboard, setCurrentDashboard] = useState(dashboards[0])
   const [listStatus, setListStatus] = useState(false)
+  const [overlayStatus, setOverlayStatus] = useState(false)
 
   return (
     <div className="App">
-      <Nav listStatus={listStatus} setListStatus={setListStatus} />
+      <div className={`overlay ${overlayStatus ? "active" : ""}`}></div>
+      <Nav
+        listStatus={listStatus}
+        setListStatus={setListStatus}
+        overlayStatus={overlayStatus}
+        setOverlayStatus={setOverlayStatus}
+      />
       <Viz currentDashboard={currentDashboard} />
       <List
         listStatus={listStatus}
+        setListStatus={setListStatus}
+        overlayStatus={overlayStatus}
+        setOverlayStatus={setOverlayStatus}
         dashboards={dashboards}
         setDashboards={setDashboards}
         setCurrentDashboard={setCurrentDashboard}

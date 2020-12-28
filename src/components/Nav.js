@@ -1,7 +1,19 @@
-export default function Nav({ listStatus, setListStatus }) {
+export default function Nav({
+  listStatus,
+  setListStatus,
+  overlayStatus,
+  setOverlayStatus,
+}) {
   return (
     <nav>
-      <button onClick={() => setListStatus(!listStatus)}>List</button>
+      <button
+        onClick={() => {
+          setListStatus(!listStatus)
+          setOverlayStatus(!overlayStatus)
+        }}
+      >
+        List
+      </button>
     </nav>
   )
 }
