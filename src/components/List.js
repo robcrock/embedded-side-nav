@@ -33,6 +33,8 @@ export default function List({
             dashboards={dashboards}
             setDashboards={setDashboards}
             setCurrentDashboard={setCurrentDashboard}
+            // React requires the key prop with a unique values on components
+            // that have the same props.
             key={dashboard.id}
             id={dashboard.id}
           />

@@ -32,10 +32,6 @@ function App() {
       <FontAwesomeIcon
         className="bars"
         icon={faBars}
-        listStatus={listStatus}
-        setListStatus={setListStatus}
-        overlayStatus={overlayStatus}
-        setOverlayStatus={setOverlayStatus}
         onClick={() => {
           setListStatus(!listStatus)
           setOverlayStatus(!overlayStatus)
