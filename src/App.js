@@ -33,7 +33,12 @@ function App() {
         overlayStatus={overlayStatus}
         setOverlayStatus={setOverlayStatus}
       />
-      <Overlay overlayStatus={overlayStatus} />
+      <Overlay
+        listStatus={listStatus}
+        setListStatus={setListStatus}
+        overlayStatus={overlayStatus}
+        setOverlayStatus={setOverlayStatus}
+      />
       <Viz currentDashboard={currentDashboard} />
     </div>
   )

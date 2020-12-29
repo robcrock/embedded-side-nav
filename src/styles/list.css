@@ -19,7 +19,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .list-dashboard {
@@ -30,7 +30,7 @@
 }
 
 .list-dashboard:hover {
-  background-color: #eee7ff4d;
+  background-color: #fafafaff;
 }
 
 .list-dashboard img {
@@ -53,7 +53,7 @@
 }
 
 .selected {
-  background-color: #efdbef;
+  background-color: #eeef;
 }
 
 .active-list {
