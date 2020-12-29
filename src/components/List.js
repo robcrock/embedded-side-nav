@@ -1,4 +1,8 @@
 import React from "react"
+// Import FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTimes } from "@fortawesome/free-solid-svg-icons"
+// Import components
 import ListDashboard from "./ListDashboard"
 
 export default function Library({
@@ -12,17 +16,17 @@ export default function Library({
 }) {
   return (
     <div className={`list ${listStatus ? "active-list" : ""}`}>
-      <div
-        id="dismiss"
-        onClick={() => {
-          setListStatus(!listStatus)
-          setOverlayStatus(!overlayStatus)
-        }}
-      >
-        <p>Left Arrow</p>
-        <i className="fas fa-arrow-left"></i>
+      <div className="list-header">
+        <h2>Dashboards</h2>
+        <FontAwesomeIcon
+          icon={faTimes}
+          id="dismiss"
+          onClick={() => {
+            setListStatus(!listStatus)
+            setOverlayStatus(!overlayStatus)
+          }}
+        />
       </div>
-      <h2>List</h2>
       <div className="list-dashboards">
         {dashboards.map((dashboard) => (
           <ListDashboard

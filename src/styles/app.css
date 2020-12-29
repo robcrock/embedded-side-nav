@@ -1,7 +1,8 @@
 /* @import-normalize; */
-@import "./viz.css";
 @import "./list.css";
-@import "./nav.css";
+@import "./menu.css";
+@import "./overlay.css";
+@import "./viz.css";
 
 *,
 *::before,
@@ -18,36 +19,11 @@ h3 {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
 }
 
 h3,
 h4 {
   font-weight: 400;
   color: rgb(100, 100, 100);
-}
-
-.App {
-  display: block;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  /* full screen */
-  width: 100vw;
-  height: 100%;
-  /* transparent black */
-  background: rgba(0, 0, 0, 0.7);
-  /* middle layer, i.e. appears below the sidebar */
-  z-index: 999;
-  opacity: 0;
-  /* animate the transition */
-  transition: all 0.5s ease-in-out;
-}
-
-/* display .overlay when it has the .active class */
-.overlay.active {
-  display: block;
-  opacity: 1;
 }

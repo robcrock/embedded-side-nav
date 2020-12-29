@@ -5,24 +5,27 @@
   width: 20rem;
   height: 100%;
   background-color: white;
-  box-shadow: 2px 2px 50px #dcdcdc;
+  box-shadow: 2px 2px 50px #b3b3b3ff;
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
   opacity: 0;
-  /* additional css */
   /* top layer */
-  z-index: 9999;
+  z-index: 3;
 }
 
-.list h2 {
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
 }
 
 .list-dashboard {
   display: flex;
-  align-items: center;
-  padding: 1rem;
+  align-items: top;
+  padding: 0.75rem;
   cursor: pointer;
 }
 
@@ -31,15 +34,18 @@
 }
 
 .list-dashboard img {
-  width: 30%;
+  width: 35%;
 }
 
 .dashboard-description {
   padding-left: 1rem;
+  text-transform: uppercase;
 }
 
 .dashboard-description h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 
 .dashboard-description h4 {
@@ -67,34 +73,4 @@
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
   border: transparent;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  /* full screen */
-  width: 100vw;
-  height: 100vh;
-  /* transparent black */
-  background: rgba(0, 0, 0, 0.7);
-  /* middle layer, i.e. appears below the sidebar */
-  z-index: 998;
-  opacity: 0;
-  /* animate the transition */
-  transition: all 0.5s ease-in-out;
-}
-
-/* display .overlay when it has the .active class */
-.overlay.active {
-  display: block;
-  opacity: 1;
-}
-
-#dismiss {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  /* top right corner of the sidebar */
-  top: 10px;
-  right: 10px;
 }

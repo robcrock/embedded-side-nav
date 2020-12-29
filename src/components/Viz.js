@@ -33,7 +33,6 @@ export default function Viz({ currentDashboard }) {
   return (
     <div className="viz-container">
       <h2>{currentDashboard.name}</h2>
-      <h3>{currentDashboard.author}</h3>
       <div ref={ref}></div>
     </div>
   )

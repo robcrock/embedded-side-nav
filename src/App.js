@@ -1,6 +1,7 @@
 import { useState } from "react"
-
-import Nav from "./components/Nav"
+// Import Components
+import Menu from "./components/Menu"
+import Overlay from "./components/Overlay"
 import Viz from "./components/Viz"
 import List from "./components/List"
 // Adding styles
@@ -17,14 +18,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className={`overlay ${overlayStatus ? "active" : ""}`}></div>
-      <Nav
-        listStatus={listStatus}
-        setListStatus={setListStatus}
-        overlayStatus={overlayStatus}
-        setOverlayStatus={setOverlayStatus}
-      />
-      <Viz currentDashboard={currentDashboard} />
       <List
         listStatus={listStatus}
         setListStatus={setListStatus}
@@ -34,6 +27,14 @@ function App() {
         setDashboards={setDashboards}
         setCurrentDashboard={setCurrentDashboard}
       />
+      <Menu
+        listStatus={listStatus}
+        setListStatus={setListStatus}
+        overlayStatus={overlayStatus}
+        setOverlayStatus={setOverlayStatus}
+      />
+      <Overlay overlayStatus={overlayStatus} />
+      <Viz currentDashboard={currentDashboard} />
     </div>
   )
 }
