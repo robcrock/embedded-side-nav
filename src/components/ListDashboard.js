@@ -1,4 +1,4 @@
-export default function LibrarySong({
+export default function ListDashboard({
   dashboard,
   dashboards,
   setDashboards,
@@ -6,18 +6,17 @@ export default function LibrarySong({
   id,
 }) {
   const dashboardSelectHandler = () => {
-    console.log(dashboard)
     setCurrentDashboard(dashboard)
     // Add active state
-    const newDashboards = dashboards.map((dashboards) => {
-      if (dashboards.id === id) {
+    const newDashboards = dashboards.map((dashboard) => {
+      if (dashboard.id === id) {
         return {
-          ...dashboards,
+          ...dashboard,
           active: true,
         }
       } else {
         return {
-          ...dashboards,
+          ...dashboard,
           active: false,
         }
       }

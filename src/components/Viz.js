@@ -4,7 +4,6 @@ const { tableau } = window
 export default function Viz({ currentDashboard }) {
   const [viz, setViz] = useState(null)
 
-  console.log(currentDashboard.image)
   // Set up the arguments to pass into the Tableau Viz function
   const ref = useRef(null)
   const options = {

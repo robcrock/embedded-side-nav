@@ -5,7 +5,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons"
 // Import components
 import ListDashboard from "./ListDashboard"
 
-export default function Library({
+export default function List({
   listStatus,
   setListStatus,
   overlayStatus,
@@ -20,7 +20,6 @@ export default function Library({
         <h2>Dashboards</h2>
         <FontAwesomeIcon
           icon={faTimes}
-          id="dismiss"
           onClick={() => {
             setListStatus(!listStatus)
             setOverlayStatus(!overlayStatus)

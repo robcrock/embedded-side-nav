@@ -1,6 +1,8 @@
 import { useState } from "react"
+// Import FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 // Import Components
-import Menu from "./components/Menu"
 import Overlay from "./components/Overlay"
 import Viz from "./components/Viz"
 import List from "./components/List"
@@ -27,11 +29,17 @@ function App() {
         setDashboards={setDashboards}
         setCurrentDashboard={setCurrentDashboard}
       />
-      <Menu
+      <FontAwesomeIcon
+        className="bars"
+        icon={faBars}
         listStatus={listStatus}
         setListStatus={setListStatus}
         overlayStatus={overlayStatus}
         setOverlayStatus={setOverlayStatus}
+        onClick={() => {
+          setListStatus(!listStatus)
+          setOverlayStatus(!overlayStatus)
+        }}
       />
       <Overlay
         listStatus={listStatus}
