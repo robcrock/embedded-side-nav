@@ -3,7 +3,6 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 // Import Components
-import Overlay from "./components/Overlay"
 import Viz from "./components/Viz"
 import List from "./components/List"
 // Adding styles
@@ -36,12 +35,6 @@ function App() {
           setListStatus(!listStatus)
           setOverlayStatus(!overlayStatus)
         }}
-      />
-      <Overlay
-        listStatus={listStatus}
-        setListStatus={setListStatus}
-        overlayStatus={overlayStatus}
-        setOverlayStatus={setOverlayStatus}
       />
       <Viz currentDashboard={currentDashboard} />
     </div>
